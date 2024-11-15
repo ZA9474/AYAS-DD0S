@@ -4,3 +4,11 @@
 
 # clone repository
 
+  - git clone https://github.com/ZA9474/AYAS-DD0S.git
+
+  - cd AYAS-DD0S
+
+  - python setup.py
+
+  - python3 main.py
+
