@@ -55,7 +55,7 @@ time.sleep(5),
 print("\033[95m                         ⟩⟩  E \033[0m "),
 time.sleep(5),
 
-        class syn(threading.Thread):
+class syn(threading.Thread):
     def __init__(self, ip, port, packets):
         self.ip = ip
         self.port = port
