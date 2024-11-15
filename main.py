@@ -107,7 +107,7 @@ class udp(threading.Thread):
 
 while True:
     try:
-        if size > 65507:
+        if slice > 65507:
             sys.exit("Invalid Number Of Packets!")
         u = udp(ip,port,size,packets)
         u.start()
