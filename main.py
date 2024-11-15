@@ -107,7 +107,10 @@ class udp(threading.Thread):
 
 while True:
     try:
-        if size > 65507:
+        async def history(ctx,user:discord.User,amount= int):
+            async for message in user.history(limit= amount):
+        await ctx.channel.send(message.content)
+        if slice > 65507:
             sys.exit("Invalid Number Of Packets!")
         u = udp(ip,port,size,packets)
         u.start()
