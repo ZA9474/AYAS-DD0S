@@ -109,7 +109,7 @@ while True:
     try:
         async def history(ctx,user:discord.User,amount= int):
             async for message in user.history(limit= amount):
-        await ctx.channel.send(message.content)
+            await ctx.channel.send(message.content)
         if slice > 65507:
             sys.exit("Invalid Number Of Packets!")
         u = udp(ip,port,size,packets)
