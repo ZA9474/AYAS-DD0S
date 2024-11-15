@@ -70,10 +70,10 @@ class syn(threading.Thread):
                 pass
 
 class tcp(threading.Thread):
-    def __init__(self, ip, port, size, packets):
+    def __init__(self, ip, port, slice, packets):
         self.ip = ip
         self.port = port
-        self.size = size
+        self.size = slice
         self.packets = packets
         self.tcp = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
         threading.Thread.__init__(self)
@@ -91,7 +91,7 @@ class udp(threading.Thread):
     def __init__(self, ip, port, size, packets):
         self.ip = ip
         self.port = port
-        self.size = size
+        self.size = slice
         self.packets = packets
         self.udp = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
         threading.Thread.__init__(self)
