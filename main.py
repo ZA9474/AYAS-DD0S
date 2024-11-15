@@ -48,7 +48,7 @@ port = int(sys.argv[2])
 size = int(sys.argv[3])
 packets = int(sys.argv[3])
 time.sleep(5),
-print("\033[96m                         ⟩⟩  F \033[0m "),
+print("\033[96m                         ⟩⟩  P \033[0m "),
 time.sleep(5),
 print("\033[92m                         ⟩⟩  E \033[0m "),
 time.sleep(5),
