@@ -48,15 +48,15 @@ port = int(sys.argv[2])
 size = int(sys.argv[3])
 packets = int(sys.argv[3])
 time.sleep(5),
-print("\033[96m                         ⟩⟩  P \033[0m "),
+print("\033[96m----------⟩⟩  15% \033[0m "),
 time.sleep(5),
-print("\033[92m                         ⟩⟩  E \033[0m "),
+print("\033[92m-----------------⟩⟩  25% \033[0m "),
 time.sleep(5),
-print("\033[1m                         ⟩⟩  A \033[0m "),
+print("\033[1m------------------------⟩⟩  50% \033[0m "),
 time.sleep(5),
-print("\033[97m                         ⟩⟩  C \033[0m "),
+print("\033[97m------------------------------⟩⟩  75% \033[0m "),
 time.sleep(5),
-print("\033[95m                         ⟩⟩  E \033[0m "),
+print("\033[95m-------------------------------------⟩⟩  100% \033[0m "),
 time.sleep(5),
 class syn(threading.Thread):
     def __init__(self, ip, port, packets):
