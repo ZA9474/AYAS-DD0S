@@ -37,11 +37,12 @@ logo = """
                   ÷÷         ÷÷              ÷÷      ÷÷
                     ÷÷      ÷÷                 ÷÷ ÷÷
                        ÷÷ ÷÷
+
 ===================≠======≠==============================≠============
-print("\033[33m                BIRRUH  BIDDAM  NAFDHIKA YAA AQSHA                 
-print("\033[33m                          design By: Za'99                          
-print("\033[33m                                 |                                 
-print("\033[33m                             --oO0Oo--                              
+\033[33m                BIRRUH  BIDDAM  NAFDHIKA YAA AQSHA                 
+\033[33m                          design By: Za'99                          
+\033[33m                                 |                                 
+\033[33m                             --oO0Oo--                              
 =================≠====================================================
 """
 faded_text = fade.fire(logo)
@@ -109,13 +110,13 @@ while True:
             sys.exit("Invalid Number Of Packets!")
         u = udp(ip,port,size,packets)
         u.start()
-        print("\033[33m[\033[1m+\033[33m]\033[92mRequest " +str()+ "  \033[33mto Sent attack \033[97m  \033[96m-->> " +ip+ " \033[0m" )
+        print("\033[33m[\033[1m+\033[33m] \033[92mRequest " +str()+ "  \033[33mto Sent attack \033[97m  \033[96m-->>  \033[95m[" +ip+ "] \033[0m" )
         t = tcp(ip,port,size,packets)
         t.start()
-        print("\033[33m[\033[1m+\033[33m]\033[92mRequest " +str()+ "  \033[33mto Sent attack \033[97m  \033[31m-->> " +ip+ " \033[0m" )
+        print("\033[33m[\033[1m+\033[33m] \033[92mRequest " +str()+ "  \033[33mto Sent attack \033[97m  \033[31m-->>  \033[94m[" +ip+ "] \033[0m" )
         s = syn(ip,port,packets)
         s.start()
-        print("\033[33m[\033[1m+\033[33m]\033[92mRequest " +str()+ "  \033[33mto Sent attack \033[97m  \033[32m-->> " +ip+ " \033[0m" )
+        print("\033[33m[\033[1m+\033[33m] \033[92mRequest " +str()+ "  \033[33mto Sent attack \033[97m  \033[32m-->>  \033[93m[" +ip+ "] \033[0m" )
     except KeyboardInterrupt:
         print ("Stopping Flood!")
         sys.exit()
