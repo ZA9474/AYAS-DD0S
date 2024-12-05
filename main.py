@@ -56,6 +56,7 @@ size = int(sys.argv[3])
 packets = int(sys.argv[3])
 class syn(threading.Thread):
     def __init__(self, ip, port, packets):
+        
         self.ip = ip
         self.port = port
         self.packets = packets
