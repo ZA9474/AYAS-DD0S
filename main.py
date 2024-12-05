@@ -111,11 +111,11 @@ while True:
             sys.exit("Invalid Number Of Packets!")
         u = udp(ip,port,size,packets)
         u.start()
-        print("\033[33m[\033[1m+\033[33m] \033[92mRequest " +str()+ "  \033[33mto Sent attack \033[97m  \033[96m-->>  \033[95m[" +ip+ "] \033[0m" )
+        print("\033[33m[\033[1m+\033[33m] \033[92mRequest " +str()+ "  \033[33mto Sent attack \033[97m  \033[96m-->  \033[95m" +ip+ " \033[0m" )
         time.sleep(1),
-        print("\033[33m[\033[1m+\033[33m] \033[92mRequest " +str()+ "  \033[33mto Sent attack \033[97m  \033[31m-->>  \033[94m[" +ip+ "] \033[0m" )
+        print("\033[33m[\033[1m+\033[33m] \033[92mRequest " +str()+ "  \033[33mto Sent attack \033[97m  \033[31m-->  \033[94m" +ip+ " \033[0m" )
         time.sleep(1),
-        print("\033[33m[\033[1m+\033[33m] \033[92mRequest " +str()+ "  \033[33mto Sent attack \033[97m  \033[32m-->>  \033[93m[" +ip+ "] \033[0m" )
+        print("\033[33m[\033[1m+\033[33m] \033[92mRequest " +str()+ "  \033[33mto Sent attack \033[97m  \033[32m-->  \033[93m" +ip+ " \033[0m" )
     except KeyboardInterrupt:
         print ("Stopping Flood!")
         sys.exit()
